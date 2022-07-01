@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pomodoro Clock Moulik</title>
+    <link rel="stylesheet" href="styles.css" />
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Staatliches&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main class="app">
+      <progress id="js-progress" value="0"></progress>
+      <div class="progress-bar"></div>
+      <div class="timer ">
+        <div class="button-group mode-buttons  hhTLXv" id="js-mode-buttons">
+          <button class="button mode-button active" id="js-pomodoro" style="
+          margin-left: -82px;
+          font-family: 'Caveat', cursive;
+font-family: 'Staatliches', cursive;" data-mode="pomodoro" >
+                  Pomodoro
+                </button>
+                <button data-mode="shortBreak" class="button mode-button" id="js-short-break" style="
+                padding-left: 90px;
+                padding-right: 90px;
+                font-family: 'Caveat', cursive;
+font-family: 'Staatliches', cursive;
+            " >
+                        Short break
+                      </button>
+          <button
+            data-mode="longBreak"
+            class="button mode-button"
+            id="js-long-break"
+            style="
+          margin-right: -82px;
+          font-family: 'Caveat', cursive;
+font-family: 'Staatliches', cursive;
+      ">
+          
+            Long break
+          </button>
+        </div>
+        <div class="clock sc-gJWqzi hhTLXv" id="js-clock">
+          <span id="js-minutes" class="number" 
+         style ="margin-left: 52px;" 
+      >25</span>
+          <span class="separator" style="margin-top: -93px" >:</span>
+          <span id="js-seconds" class="number" style ="margin-right: 52px;">00</span>
+        </div>
+        <button class="main-button" data-action="start" id="js-btn"
+        style="font-family: 'Caveat', cursive;
+        font-family: 'Staatliches', cursive;">
+          Start
+        </button>
+      </div>
+    </main>
+    <div class="hidden">
+      <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
+      <audio src="break.mp3" data-sound="shortBreak"></audio>
+      <audio src="break.mp3" data-sound="longBreak"></audio>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
